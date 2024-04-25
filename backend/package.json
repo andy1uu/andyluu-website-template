@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Node.js Rest Apis with Express, Sequelize & MongoDB for Andy Luu's personal website.",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "sequelize",
+    "mongodb",
+    "rest",
+    "api"
+  ],
+  "author": "andyluu324@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.7",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.5.0",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "type": "commonjs"
+}
