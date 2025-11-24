@@ -903,7 +903,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/postcss@npm:^4.1.14":
+"@tailwindcss/postcss@npm:^4.1.17":
   version: 4.1.17
   resolution: "@tailwindcss/postcss@npm:4.1.17"
   dependencies:
@@ -1143,7 +1143,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "andyluu.vercel.app@workspace:."
   dependencies:
-    "@tailwindcss/postcss": "npm:^4.1.14"
+    "@tailwindcss/postcss": "npm:^4.1.17"
     "@types/node": "npm:^24.10.1"
     "@types/react": "npm:^19.2.7"
     "@types/react-dom": "npm:^19.2.3"
