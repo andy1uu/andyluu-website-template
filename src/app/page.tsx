@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 const Home = () => (
   <main className="Homepage bg-light dark:bg-dark flex min-h-screen w-full items-center justify-center">
     <h1 className="Homepage-text text-dark dark:text-light text-8xl font-bold">
-      Hello World
+      Hello World test
     </h1>
   </main>
 );
