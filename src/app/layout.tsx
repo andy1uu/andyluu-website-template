@@ -1,3 +1,4 @@
+import React from "react";
 import { Rubik } from "next/font/google";
 import Providers from "./providers";
 import "./globals.css";
@@ -10,18 +11,16 @@ const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) => {
-  return (
-    <html lang="en">
-      <body className={rubik.className}>
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-        </Providers>
-      </body>
-    </html>
-  );
-};
+}>) => (
+  <html lang="en">
+    <body className={rubik.className}>
+      <Providers>
+        <Header />
+        {children}
+        <Footer />
+      </Providers>
+    </body>
+  </html>
+);
 
 export default RootLayout;
