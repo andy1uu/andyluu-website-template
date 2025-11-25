@@ -1,11 +1,25 @@
 import React from "react";
+
+import type { Metadata } from "next";
+
 import { Rubik } from "next/font/google";
+
 import Providers from "./providers";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 
 const rubik = Rubik({ subsets: ["latin"], display: "swap" });
+
+export const metadata: Metadata = {
+  title: "Andy Luu's Personal Portfolio Website",
+  description:
+    "This is a personal portfolio website for Andy Luu to show off his accomplishments.",
+};
 
 const RootLayout = ({
   children,
@@ -15,10 +29,16 @@ const RootLayout = ({
   <html lang="en">
     <body className={rubik.className}>
       <Providers>
-        <Header />
-        {children}
-        <Footer />
+        <main className="flex min-h-screen w-full overflow-y-auto overflow-x-hidden">
+          <div className="flex w-full flex-col bg-light dark:bg-dark text-dark dark:text-light">
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </main>
       </Providers>
+      <Analytics />
+      <SpeedInsights />
     </body>
   </html>
 );

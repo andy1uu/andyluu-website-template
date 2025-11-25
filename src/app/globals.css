@@ -1,3 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-light: #dddddd;
+  --color-dark: #222222;
+  --color-primary: #33a679;
+  --color-secondary: #148E66;
+  --color-tertiary: #17F5AB;
+  --font-rubik: "Rubik", "sans-serif";
+}
+
+@custom-variant dark (&:is(.dark *));
