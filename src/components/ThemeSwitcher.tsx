@@ -40,7 +40,7 @@ const ThemeSwitcher = () => {
         }
         aria-label="Loading"
         color="default"
-        className={`flex justify-start rounded-lg p-3 md:w-full`}
+        className={`flex justify-start rounded-lg p-3`}
       />
     );
 
@@ -49,8 +49,8 @@ const ThemeSwitcher = () => {
       <button
         onClick={() => setTheme("light")}
         aria-label="Light"
-        className={`flex relative justify-start group rounded-full hover:rounded-md gap-2 p-2 transition-all bg-primary`}>
-        <MdOutlineLightMode size={28} className="my-auto text-light" />
+        className={`group bg-primary relative flex w-fit justify-start gap-2 rounded-full p-2 transition-all hover:rounded-md`}>
+        <MdOutlineLightMode size={28} className="text-light my-auto" />
       </button>
     );
   }
@@ -60,8 +60,8 @@ const ThemeSwitcher = () => {
       <button
         onClick={() => setTheme("dark")}
         aria-label="Dark"
-        className={`flex relative justify-start group rounded-full hover:rounded-md gap-2 p-2 bg-primary`}>
-        <MdOutlineDarkMode size={28} className="my-auto text-dark" />
+        className={`group bg-primary relative flex w-fit justify-start gap-2 rounded-full p-2 hover:rounded-md`}>
+        <MdOutlineDarkMode size={28} className="text-dark my-auto" />
       </button>
     );
   }

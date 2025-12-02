@@ -4,10 +4,10 @@ import type { Metadata } from "next";
 
 import { Rubik } from "next/font/google";
 
-import Providers from "./providers";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
+import { ThemeProvider } from "next-themes";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -26,17 +26,17 @@ const RootLayout = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => (
-  <html lang="en">
+  <html lang="en" className="light">
     <body className={rubik.className}>
-      <Providers>
-        <main className="flex min-h-screen w-full overflow-y-auto overflow-x-hidden">
-          <div className="flex w-full flex-col bg-light dark:bg-dark text-dark dark:text-light">
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <main className="flex min-h-screen w-full overflow-x-hidden overflow-y-auto">
+          <div className="bg-light dark:bg-dark text-dark dark:text-light flex w-full flex-col">
             <Header />
             {children}
             <Footer />
           </div>
         </main>
-      </Providers>
+      </ThemeProvider>
       <Analytics />
       <SpeedInsights />
     </body>
