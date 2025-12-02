@@ -19,7 +19,7 @@ const Home = () => (
         Tertiary Color Text
       </h3>
       <p className="Homepage-text text-dark dark:text-light text-xl font-bold">
-        Text Color Text
+        Text Color Textdwdwdwd
       </p>
       <ThemeSwitcher />
     </div>
