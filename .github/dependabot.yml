@@ -16,6 +16,8 @@ updates:
     commit-message:
       prefix: "[Yarn Package Update]: "
       include: "scope"
+    ignore: 
+      - dependency-name: "eslint" 
   - package-ecosystem: "github-actions" # See documentation for possible values
     directory: "/" # Location of package manifests
     open-pull-requests-limit: 5
