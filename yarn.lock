@@ -4802,13 +4802,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/analytics@npm:^1.6.1":
-  version: 1.6.1
-  resolution: "@vercel/analytics@npm:1.6.1"
+"@vercel/analytics@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@vercel/analytics@npm:2.0.0"
   peerDependencies:
     "@remix-run/react": ^2
     "@sveltejs/kit": ^1 || ^2
     next: ">= 13"
+    nuxt: ">= 3"
     react: ^18 || ^19 || ^19.0.0-rc
     svelte: ">= 4"
     vue: ^3
@@ -4828,7 +4829,7 @@ __metadata:
       optional: true
     vue-router:
       optional: true
-  checksum: 10/304c6cfef21cdec4c1a2c68c1664e323c1813d733972c9f3603b955ca899655b2a9a0084a34288548e6847ffb802c2916273e4b2bef70e5ce712254a18ae2f3c
+  checksum: 10/fad69b26ab2f9d2cb95dda69f26890764e098664b0567868ca44e537ff745c1a7a775ae294358013da4e7502fa4f68bd91b751a40da75cc80e0fe5978f9361cf
   languageName: node
   linkType: hard
 
@@ -4900,7 +4901,7 @@ __metadata:
     "@types/react-dom": "npm:^19.2.3"
     "@typescript-eslint/eslint-plugin": "npm:^8.56.1"
     "@typescript-eslint/parser": "npm:^8.57.0"
-    "@vercel/analytics": "npm:^1.6.1"
+    "@vercel/analytics": "npm:^2.0.0"
     "@vercel/speed-insights": "npm:^1.3.1"
     autoprefixer: "npm:^10.4.27"
     eslint: "npm:^9.39.2"
